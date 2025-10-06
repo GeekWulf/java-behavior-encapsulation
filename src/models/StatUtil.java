@@ -1,6 +1,6 @@
 package models;
 
-import models.coparators.*;
+import models.comparators.*;
 import models.measurers.BalanceMeasurer;
 import models.measurers.Measurer;
 import models.measurers.TemperatureMeasurer;

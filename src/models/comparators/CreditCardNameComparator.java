@@ -1,4 +1,4 @@
-package models.coparators;
+package models.comparators;
 
 import models.CreditCard;
 

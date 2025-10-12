@@ -16,4 +16,9 @@ public class Sensor {
     public int getSensorID() {
         return sensorID;
     }
+
+    @Override
+    public String toString() {
+        return "{Sensor ID : " +  sensorID + " " + ", Temperature : " + temperature + "}";
+    }
 }

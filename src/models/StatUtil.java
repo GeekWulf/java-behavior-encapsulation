@@ -34,7 +34,9 @@ public class StatUtil {
 
     public static void main(String[] args) {
         Sensor[] sensors = {
-                new Sensor(1, -20), new Sensor(2, 32), new Sensor(3, -15)
+                new Sensor(1, -20),
+                new Sensor(2, 32),
+                new Sensor(3, -15)
         };
 
         CreditCard[] cards = {
@@ -45,29 +47,5 @@ public class StatUtil {
 
         System.out.println(countNegative(sensors, new TemperatureMeasurer()));
         System.out.println(countNegative(cards, new BalanceMeasurer()));
-
-        System.out.println("Sort by value");
-        sort(sensors, new TemperatureComparator());
-        sort(cards, new BalanceComparator());
-
-        for (Sensor sensor : sensors) {
-            System.out.print(sensor.getTemperature() + " ");
-        }
-        System.out.println();
-        for (CreditCard card : cards) {
-            System.out.print(card.getBalance() + " ");
-        }
-
-        System.out.println("Sort by name and ID");
-        sort(sensors, new SensorIDComparator());
-        sort(cards, new CreditCardNameComparator());
-
-        for (Sensor sensor : sensors) {
-            System.out.print(sensor.getSensorID() + " ");
-        }
-        System.out.println();
-        for (CreditCard card : cards) {
-            System.out.print(card.getName() + " ");
-        }
     }
 }
